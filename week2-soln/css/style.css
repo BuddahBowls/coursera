@@ -1,0 +1,8 @@
+* {
+    box-sizing: border-box;
+}
+
+section {
+    display: inline;
+    width: 33.33%;
+}
