@@ -1,8 +1,97 @@
 * {
     box-sizing: border-box;
+    font-family: "Arial";
+}
+
+.title {
+    text-align: center;
+    padding: 30px;
 }
 
 section {
-    display: inline;
-    width: 33.33%;
+    display: inline-block;
+    background-color: lightgrey;
+    border: 1px solid black;
+}
+
+.ch-title {
+    text-align: right;
+    background-color: lightcoral;
+    width: 150px;
+    float: right;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.bf-title {
+    text-align: right;
+    background-color: crimson;
+    color: white;
+    width: 150px;
+    float: right;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.sh-title {
+    text-align: right;
+    background-color: beige;
+    width: 150px;
+    float: right;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.dummy {
+    padding: 10px;
+    padding-top: 35px;
+}
+
+@media (min-width: 992px) {
+    section {
+        width: 31%;
+        margin: 1%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .chicken {
+        width: 47%;
+        float: left;
+        margin-bottom: 20px;
+        margin-right: 1%;
+        margin-left: 2%;
+    }
+    
+    .beef {
+        width: 47%;
+        float: right;
+        margin-bottom: 20px;
+        margin-right: 2%;
+        margin-left: 1%;
+    }
+    
+    .sushi {
+        width: 96%;
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+}
+
+@media (max-width: 767px) {
+    section {
+        margin: 2%;
+    }
 }
